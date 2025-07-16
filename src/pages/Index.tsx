@@ -14,7 +14,8 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5"></div>
+        <div className="absolute inset-0 bg-gradient-hero"></div>
+        <div className="absolute inset-0 bg-gradient-radial"></div>
         <div className="container relative py-20 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="space-y-4">
@@ -31,7 +32,7 @@ const Index = () => {
               </p>
             </div>
 
-            <Card className="max-w-2xl mx-auto border-0 shadow-card bg-card/50 backdrop-blur">
+            <Card className="max-w-2xl mx-auto border-0 shadow-glow bg-card/80 backdrop-blur-xl transition-all duration-500 hover:shadow-glow hover:scale-[1.02]">
               <CardContent className="p-8">
                 <UrlShortener />
               </CardContent>
@@ -67,7 +68,7 @@ const Index = () => {
             </p>
           </div>
           
-          <Card className="border-0 shadow-card bg-card/50 backdrop-blur">
+          <Card className="border-0 shadow-glow bg-card/80 backdrop-blur-xl transition-all duration-500 hover:shadow-glow hover:scale-[1.02]">
             <CardContent className="p-8">
               <Analytics />
             </CardContent>
